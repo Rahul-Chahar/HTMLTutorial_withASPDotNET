@@ -4,10 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title></title> 
     <script>
-            function Zoom() {
-                Name = "Coder";
+        function Zoom() {
+            // Take input from user and display it in alert box
+            Name = prompt("Please Enter Your Nmae")
                 alert("My Name is: " + Name);
             }
         
