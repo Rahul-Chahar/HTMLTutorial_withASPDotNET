@@ -12,7 +12,7 @@
 
             switch (Operation) {
                 case '+':
-                    txtResult.value = a + b;
+                    txtResult.value = a + b ;
                     break;
                 case '-':
                     txtResult.value = a - b;
