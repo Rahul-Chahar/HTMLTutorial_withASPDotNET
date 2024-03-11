@@ -8,8 +8,15 @@
     <script>
         function Zoom() {
             // Take input from user and display it in alert box
-            Name = prompt("Please Enter Your Nmae")
-                alert("My Name is: " + Name);
+
+            // 1. Take input from user
+            // 2. Display it in alert box
+            // 3. Use prompt() method to take input from user
+            // 4. Use alert() method to display the input in alert box
+            // 5. Use concatenation to display the input in alert box
+            // 6. Use + operator to concatenate the string
+            // 7. Conde is more sorted and readable
+                alert("My Name is: " + prompt("Please Enter Your Name"));
             }
         
     </script>
