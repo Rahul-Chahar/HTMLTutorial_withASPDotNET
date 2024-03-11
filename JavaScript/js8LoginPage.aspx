@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="js8LoginPage.aspx.cs" Inherits="HTMLTutorial_withASPDotNET.JavaScript.js8LoginPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" Trace="false" Debug="true" CodeBehind="js8LoginPage.aspx.cs" Inherits="HTMLTutorial_withASPDotNET.JavaScript.js8LoginPage" %>
 
 <!DOCTYPE html>
 
@@ -11,32 +11,10 @@
         }
     </style>
         
-    <script>
-        function checkEmpty(Control) {
-            if (Control.value.trim().length == 0) {
-                lblErrorMsg.innerHTML = "You can't leave this empty";
-                Control.focus();
-            }
-            else {
-                lblErrorMsg.innerHTML = "";
-            }
-        }
-
-        function CheckPassword() {
-            var str = txtPass.value;
-            if (str.match(/[a-z]/g) && str.match(/[A-Z]/g) && str.match(/[0-9]/g) && str.match(/[@,#,&]/g) && str.length >= 8) {
-                return true;
-            }
-            else {
-                alert("Password should contain lowercase, uppercase letters, numbers, and special characters: @,#,&");
-                return false;
-            }
-        }
-
-    </script>
+    <script lang="javascript" src="datavalidationLogin.js"> </script>
 </head>
 <body>
-    <form id="form1" runat="server"  onsubmit="CheckPassword()">
+    <form id="form1" runat="server"  onsubmit = "CheckPassword()">
         <div>
 
             <table class="auto-style1" align="center" border="1">
