@@ -23,10 +23,12 @@
 </head>
 <body>
     <script>
-        Zoom();
+       // Zoom();
     </script>
     <form id="form1" runat="server">
         <div>
+            <p>Type and print your name</p> <br />
+            <input type ="button" value="Accept Name" onmouseover="Zoom()"/>
         </div>
     </form>
 </body>
